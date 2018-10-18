@@ -6,7 +6,7 @@ import pydicom
 try:
     import pyamg
     amg_loaded = True
-    print('pyamg loaded !')
+    #print('pyamg loaded !')
 except ImportError:
     amg_loaded = False
 import time
@@ -63,7 +63,7 @@ def get_labels(img, label):
     cv2.setMouseCallback("Image", mouse_handler, data)
     cv2.waitKey(0)
 
-    print(data['label'])
+    #print(data['label'])
     # Convert array to np.array
     points = np.vstack(data['label']).astype(np.uint8)
 
